@@ -17,6 +17,7 @@ ReviewKoala, Azure DevOps pull request'leriniz için yapay zeka destekli kod inc
 
 ## Kurulum
 
+
 ### Chrome Web Store'dan Kurulum
 1. Chrome Web Store'dan ReviewKoala eklentisini yükleyin
 2. Eklenti ayarlarından OpenAI API anahtarınızı girin
