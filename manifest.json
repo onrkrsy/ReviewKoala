@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "ReviewKoala",
+  "version": "1.0",
+  "description": "AI Code Review Assistant for Azure DevOps",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://dev.azure.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://dev.azure.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["images/*"],
+    "matches": ["https://dev.azure.com/*"]
+  }]
+} 
