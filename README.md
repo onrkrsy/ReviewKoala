@@ -1,7 +1,7 @@
 # ReviewKoala - AI Code Review Assistant for Azure DevOps
 
 <div align="center">
-  <img src="images/koala-icon-128.png" alt="ReviewKoala Logo" width="128" height="128">
+  <img src="images/icon128.png" alt="ReviewKoala Logo" width="128" height="128">
 </div>
 
 ReviewKoala, Azure DevOps pull request'leriniz için yapay zeka destekli kod inceleme asistanıdır. GPT-4 tabanlı bu asistan, kodunuzu detaylı bir şekilde analiz eder ve kapsamlı geri bildirimler sunar.
@@ -26,7 +26,7 @@ ReviewKoala, Azure DevOps pull request'leriniz için yapay zeka destekli kod inc
 ### Manuel Kurulum
 1. Bu repository'yi klonlayın:
    ```bash
-   git clone https://github.com/yourusername/reviewkoala.git
+   git clone https://github.com/onrkrsy/reviewkoala.git
    ```
 2. Chrome tarayıcınızda `chrome://extensions/` adresine gidin
 3. Sağ üst köşeden "Geliştirici modu"nu aktif edin
@@ -57,7 +57,7 @@ ReviewKoala aşağıdaki kriterlere göre kodunuzu inceler:
 
 - Mantıksal hatalar
 - Eksik bileşenler
-- Loglama implementasyonu (Command sınıfları için)
+- Loglama implementasyonu  
 - Kod tekrarı
 - Veri yapıları kullanımı
 - Kod okunabilirliği
@@ -73,30 +73,7 @@ ReviewKoala aşağıdaki kriterlere göre kodunuzu inceler:
 - Kaynak yönetimi
 - Fonksiyon uzunluğu
 
-## Geliştirme
 
-### Proje Yapısı
-```
-reviewkoala/
-├── images/                 # İkonlar ve görseller
-│   ├── koala-icon-16.png
-│   ├── koala-icon-32.png
-│   ├── koala-icon-48.png
-│   └── koala-icon-128.png
-├── manifest.json          # Eklenti manifest dosyası
-├── popup.html            # Ayarlar popup'ı
-├── popup.js              # Popup mantığı
-├── content.js           # Ana eklenti kodu
-├── README.md            # Dokümantasyon
-└── LICENSE              # Lisans dosyası
-```
-
-### Geliştirme için Kurulum
-1. Repository'yi klonlayın
-2. Gerekli değişiklikleri yapın
-3. Chrome'da `chrome://extensions/` adresine gidin
-4. Geliştirici modunu aktif edin
-5. "Paketlenmemiş öğe yükle" ile test edin
 
 ## Gereksinimler
 
@@ -107,19 +84,8 @@ reviewkoala/
 ## Gizlilik
 
 ReviewKoala, kodunuzu analiz etmek için OpenAI API'sini kullanır. Gönderilen kod parçaları ve alınan yanıtlar yerel olarak işlenir ve saklanmaz.
-
-## Katkıda Bulunma
-
-1. Bu repository'yi fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
+ 
 
 ## Lisans
 
 MIT License - Detaylar için [LICENSE](LICENSE) dosyasına bakın.
-
-## Destek
-
-Sorun ve önerileriniz için [GitHub Issues](https://github.com/yourusername/reviewkoala/issues) sayfasını kullanabilirsiniz. 
